@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lakki+Reddy&display=swap');
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto-fogra: #000411;
+    --cinza-cinza: #AEB7B3;
+    --melada     : #E1EFE6;
+    --crayola    : #EFCB68;
+    --roxo-escuro: #160C28;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    background     : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../image/background3.jpg") center;
+    /*
+    background     : url("../image/background3.jpg") center;*/
+    background-size: cover;
+    height         : 100vh;
+}
+
+/*CSS Header*/
+.header {
+    flex-direction : row;
+    justify-content: space-around;
+    align-items    : center;
+    padding        : 1%;
+}
+
+.header .logo {
+    font-family: 'Lakki Reddy', cursive;
+    font-size  : 2em;
+    color      : var(--crayola);
+}
+
+.header .nav {
+    gap            : 2%;
+    flex-direction : row;
+    width          : 60%;
+    text-align     : center;
+    justify-content: center;
+    font-size      : 1.1em;
+}
+
+.nav a {
+    color: var(--melada);
+}
+
+.nav a:hover {
+    opacity   : 1;
+    transform : scale(1.25);
+    transition: 0.5ms;
+}
+
+.container-main {
+    flex-direction : column;
+    text-align     : center;
+    justify-content: center;
+    min-height     : 70%;
+    color          : var(--melada);
+}
+
+.container-main h2 {
+    font-size    : 3em;
+    margin-bottom: 1%;
+}
+
+.container-main p {
+    font-size    : 1.3em;
+    margin-bottom: 1%;
+    font-weight  : 600;
+}
+
+.container-pesquisar {
+    justify-content: center;
+    align-items    : center;
+}
+
+.container-pesquisar input {
+    width     : 35%;
+    height    : 30px;
+    background: transparent;
+    border    : 1px solid var(--crayola);
+    outline   : none;
+    color     : var(--melada);
+    padding   : 1%;
+}
+
+.container-pesquisar input::placeholder {
+    color: var(--white);
+}
+
+.container-pesquisar a {
+    background-color: var(--crayola);
+    padding         : 9px 30px;
+    color           : var(--preto-fogra);
+    cursor          : pointer;
+}
